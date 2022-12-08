@@ -10,6 +10,8 @@
               col-lg-8 col-lg-offset-2
               col-md-10 col-md-offset-1
               post-container">
+        <h1>{{ .Title }}</h1>
+
         {{ .Content }}
 
         <hr style="visibility: hidden;" />
@@ -63,7 +65,6 @@
 
         <!-- Featured Tags -->
         {{ .Scratch.Set "bottom" true }}
-        {{ partial "featured-tags.html" . }}
 
         <!-- Friends Blog -->
         {{ partial "friends.html" . }}
